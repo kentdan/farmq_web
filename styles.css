@@ -365,6 +365,21 @@ nav button {
     font-size: 18px;
     font-weight: 400;
 }
+
+.footer {
+    background-color: var(--colorprimary);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between; /* Adjust this to your needs: space-around, center, etc. */
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
 .faq {
     padding: 10px 12%;
     text-align: center;
