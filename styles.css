@@ -151,6 +151,20 @@ header a {
         right: 0;
         transition: var(--transition);
     }
+    .features h2 {
+        margin-left: 20px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .features p {
+        margin-left: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
 }
 
 
