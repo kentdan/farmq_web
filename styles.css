@@ -192,7 +192,7 @@ nav button {
     transform: translate(-50%,-50%);
     text-align: center;
     width: 80%; /* Adjust width as needed */
-    max-width: 800px; /* Set maximum width */
+    max-width: auto; /* Set maximum width */
     margin-top: 100px;
 }
 
@@ -343,20 +343,24 @@ nav button {
     margin-right: 200px;
     
 }
-.box{
-    background: #ffffff;
+.rounded-rectangle{
+    background: none;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
-.box h3{
+.rounded-rectangle:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.rounded-rectangle h3{
     color: #fff;
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 10px;
 }
-.box p{
+.rounded-rectangle p{
     color: #fff;
     font-size: 18px;
     font-weight: 400;
