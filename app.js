@@ -11,23 +11,22 @@ const hamburger = document.querySelector('.hamburger');
             navMenu.classList.remove('active');
         }));
 
-        document.addEventListener("DOMContentLoaded", function () {
-            const scrollElements = document.querySelectorAll('a[href^="#"]');
-        
-            scrollElements.forEach((scrollElement) => {
-                scrollElement.addEventListener("click", function (e) {
-                    e.preventDefault();
-        
-                    const targetId = scrollElement.getAttribute("href").substring(1);
-                    const targetElement = document.getElementById(targetId);
-        
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop,
-                            behavior: "smooth"
-                        });
-                    }
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollElements = document.querySelectorAll('a[href^="#"]');
+    
+    scrollElements.forEach((scrollElement) => {
+        scrollElement.addEventListener("click", function (e) {
+            e.preventDefault();
+    
+            const targetId = scrollElement.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+    
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: "smooth"
                 });
-            });
+            }
         });
-        
+    });
+});
